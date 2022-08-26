@@ -40,7 +40,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public User findUserById(int id) {
         List<User> users = jdbcTemplate.query(Constants.SELECT_USER_BY_ID, new UserRowMapper(), id);
-        logger.info("size if users {}", users.toString());
+        logger.info("Size if users {}", users.toString());
         if (!users.isEmpty()) {
             return users.iterator().next();
         }
