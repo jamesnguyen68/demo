@@ -12,6 +12,7 @@ public class UserConverter {
         userDto.setId(user.getId());
         userDto.setFirstName(user.getFirstName());
         userDto.setLastName(user.getLastName());
+        
         return userDto;
     }
 
