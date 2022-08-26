@@ -17,7 +17,8 @@ import java.util.List;
 public class UserDaoImpl implements UserDao {
 
     private Logger logger = LoggerFactory.getLogger(UserDaoImpl.class);
-    private static final String ID = "iduser";
+    
+private static final String ID = "iduser";
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
